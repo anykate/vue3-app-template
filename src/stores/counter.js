@@ -15,7 +15,7 @@ export const useCounterStore = defineStore('counter', {
             this.count++
 
             toast.info('Counter incremented!', {
-                timeout: 3000,
+                timeout: 1000,
             })
         },
 
@@ -25,7 +25,7 @@ export const useCounterStore = defineStore('counter', {
             this.count--
 
             toast.info('Counter decremented!', {
-                timeout: 3000,
+                timeout: 1000,
             })
         },
     },
