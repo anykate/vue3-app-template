@@ -16,15 +16,15 @@ const store = useCounterStore()
                     class="d-flex justify-content-between align-items-center fs-4"
                 >
                     <i
-                        @click="store.increment"
                         class="bi bi-plus-circle-fill"
+                        @click="store.increment"
                     ></i>
 
                     {{ store.count }}
 
                     <i
-                        @click="store.decrement"
                         class="bi bi-dash-circle-fill"
+                        @click="store.decrement"
                     ></i>
                 </div>
             </div>
