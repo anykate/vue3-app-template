@@ -5,13 +5,14 @@ const routes = [
     {
         path: '/',
         name: 'default',
+        redirect: '/home',
         component: () => import('@/layouts/DefaultLayout.vue'),
         meta: {
             requiresAuth: true,
         },
         children: [
             {
-                path: '',
+                path: '/home',
                 name: 'home',
                 component: () => import('@/views/HomeView.vue'),
             },
