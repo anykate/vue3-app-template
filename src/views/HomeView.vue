@@ -1,6 +1,8 @@
 <script setup>
 import { useCounterStore } from '@/stores/counter'
+import { ref } from 'vue'
 
+const mask = ref('+91')
 const store = useCounterStore()
 </script>
 
@@ -10,7 +12,7 @@ const store = useCounterStore()
 
         <!-- {{ store.doubleCount }} -->
 
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-md-2">
                 <div
                     class="d-flex justify-content-between align-items-center fs-4"
@@ -28,7 +30,15 @@ const store = useCounterStore()
                     ></i>
                 </div>
             </div>
-            <div class="col-md-10"></div>
+            <div class="col-md-10 p-2">
+                <input
+                    v-model="mask"
+                    v-mask="'+##-##########'"
+                    type="tel"
+                    name="mask"
+                    maxlength="14"
+                />
+            </div>
         </div>
     </div>
 </template>

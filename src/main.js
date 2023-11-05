@@ -10,6 +10,8 @@ import 'vue-toastification/dist/index.css'
 
 import '@/assets/css/style.css'
 
+import VueMask from '@devindex/vue-mask'
+
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
 import Toast, { POSITION } from 'vue-toastification'
@@ -21,4 +23,5 @@ createApp(App)
         position: POSITION.BOTTOM_RIGHT,
     })
     .use(createPinia())
+    .use(VueMask)
     .mount('#app')
