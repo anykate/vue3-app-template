@@ -4,6 +4,8 @@ import router from '@/router'
 import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min'
+
+import 'bootstrap'
 import 'vue-toastification/dist/index.css'
 
 import '@/assets/css/style.css'
