@@ -12,12 +12,11 @@ const checkAuth = async (to, from) => {
 const routes = [
     {
         path: '/',
-        redirect: '/home',
         name: 'Default',
         component: () => import('@/layouts/DefaultLayout.vue'),
         children: [
             {
-                path: 'home',
+                path: '',
                 name: 'Home',
                 component: () => import('@/views/HomeView.vue'),
                 beforeEnter: checkAuth,
