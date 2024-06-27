@@ -2,7 +2,7 @@
 
 <template>
     <router-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'Home' }"
         class="my-5 fw-bold link-underline-light fs-4 text-danger"
     >
         <i class="bi bi-arrow-left-circle-fill ms-3"></i>
