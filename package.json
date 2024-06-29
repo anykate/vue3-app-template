@@ -16,20 +16,20 @@
         "bootstrap": "^5.3.3",
         "bootstrap-icons": "^1.11.3",
         "pinia": "^2.1.7",
-        "vue": "^3.4.30",
+        "vue": "^3.4.31",
         "vue-router": "^4.4.0"
     },
     "devDependencies": {
         "@devindex/vue-mask": "^2.0.3",
         "@eslint/eslintrc": "^3.1.0",
-        "@eslint/js": "^9.5.0",
+        "@eslint/js": "^9.6.0",
         "@vitejs/plugin-vue": "^5.0.5",
-        "eslint": "^9.5.0",
+        "eslint": "^9.6.0",
         "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-vue": "^9.26.0",
         "prettier": "^3.3.2",
         "sass": "^1.77.6",
-        "vite": "^5.3.1",
+        "vite": "^5.3.2",
         "vue-toastification": "^2.0.0-rc.5"
     }
 }
