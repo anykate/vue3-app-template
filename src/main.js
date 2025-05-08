@@ -17,11 +17,11 @@ import { createApp } from 'vue'
 import Toast, { POSITION } from 'vue-toastification'
 
 createApp(App)
-    .use(router)
-    .use(Toast, {
-        // Setting the global default position
-        position: POSITION.BOTTOM_RIGHT,
-    })
-    .use(createPinia())
-    .use(VueMask)
-    .mount('#app')
+	.use(router)
+	.use(Toast, {
+		// Setting the global default position
+		position: POSITION.BOTTOM_RIGHT,
+	})
+	.use(createPinia())
+	.use(VueMask)
+	.mount('#app')
