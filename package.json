@@ -7,7 +7,9 @@
 		"build": "vite build",
 		"dev": "vite",
 		"format": "npm run lint && npm run prettier",
+		"format-windows": "npm run lint-windows && npm run prettier",
 		"lint": "eslint --fix 'src/**/*.{js,ts,jsx,tsx,vue}'",
+		"lint-windows": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,vue}\"",
 		"prettier": "npx prettier . --write",
 		"preview": "vite preview"
 	},
