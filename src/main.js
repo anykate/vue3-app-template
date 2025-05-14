@@ -13,6 +13,7 @@ import '@/assets/css/style.css'
 import VueMask from '@devindex/vue-mask'
 
 import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import { createApp } from 'vue'
 import Toast, { POSITION } from 'vue-toastification'
 
@@ -22,6 +23,6 @@ createApp(App)
 		// Setting the global default position
 		position: POSITION.BOTTOM_RIGHT,
 	})
-	.use(createPinia())
+	.use(createPinia().use(piniaPluginPersistedstate))
 	.use(VueMask)
 	.mount('#app')
